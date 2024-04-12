@@ -1,0 +1,38 @@
+*{margin: 0;padding: 0;box-sizing: border-box!important;}
+.menu_top {
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    background-color: #ffffff;
+    position: relative;
+    color:black;
+}
+.menu_top ul li a:link{
+    text-decoration: none;
+   
+}
+.menu_top ul li
+{
+  list-style-type: none;
+  display: inline;
+  margin-left: 50px;
+  
+}
+.contact,.button,.menu_top ul{
+    flex: 1;
+    justify-content: center;
+}
+.button {
+    cursor: pointer;
+    padding: 0.8rem 0;
+}
+.menu_top ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+}
+.menu_top ul li {
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+}

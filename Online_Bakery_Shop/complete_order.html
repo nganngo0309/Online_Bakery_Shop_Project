@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="complete_order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Complete order</title>
+</head>
+
+<body>
+    <!--menu-->
+    <section id="content">
+        <div class="menu_top">
+            <nav class="navbar navbar-expand-sm  fixed-top "
+            style="height:90px;;margin:0 auto;;background-color: rgb(252, 228, 232);">
+             <ul style="margin-left:-824px;font-size:20px;">
+                 <li><a href="home.html" style="color:black;padding-bottom:30px"> <br>Home </a></li>
+                 <li><a href="store.html"style="color:black;background-color: pink;height: 90px;width:80px;padding-left:15px;border-radius: 20%;padding-top:30px">Store</a></li>
+                 <li><a href="contact.html"style="color:black">Contact</a></li>        
+             </ul>
+             
+            </nav>
+        </div>
+    </section>
+    <!--form-->
+    <div class="container-fluid"
+      style="width: 100%; height:auto; background-color:white;color:black;padding-bottom:100px">
+      <div class="row">
+          <div class="col-lg-12">
+              <div style="text-align:center;margin-top:100px;">
+                  <br>
+                  <h3 class="our" style="font-size:50px;margin-top:-50px">Complete<b style="color:red">Order</b></h3><br>   
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="delivery-content">
+            <div class="delivery-content-left"style="font-size:20px;margin-left:100px">
+                <i><p style="color:rgb(3, 1, 1);margin-left:-15px">Please choose a shipping address:</p></i><br>
+                <form action="" id="pay" onsubmit="return KIEMTRA();">
+                <div class="delivery-content-left-input-top row">
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Name <span style="color:red">*</span></label>
+                        <input type="text" class="form-control" id="" placeholder="Name"name="ten">
+                        <span id="text1" style="color: red;font-size:15px;"></span>
+                    </div>                    
+                    <div class="delivery-content-left-input-top-item"style="margin-top:100px;margin-left:-210px">
+                        <label for="">Phone <span style="color:red">*</span></label>
+                        <input type="number" class="form-control" id="" placeholder="Phone"name="phone">
+                        <span id="text2" style="color: red;font-size:15px;"></span>
+                    </div>                    
+                    <div class="delivery-content-left-input-top-item" style="margin-left:20px">
+                        <label for="">City/Province <span style="color:red">*</span></label>
+                        <input type="text" class="form-control" id="" placeholder="City/Province"name="city">
+                        <span id="text3" style="color: red;font-size:15px;"></span>
+                    </div>                    
+                    <div class="delivery-content-left-input-top-item"style="margin-top:100px;margin-left:-205px">
+                        <label for="">District <span style="color:red">*</span></label>
+                        <input type="text" class="form-control" id="" placeholder="District"name="street">
+                        <span id="text4" style="color: red;font-size:15px;"></span>
+                    </div>                    
+                </div>
+                <div class="delivery-content-left-input-bottom"style="margin-top:20px;margin-left:-20px;width:43%">
+                        <label for="">Address <span style="color:red">*</span></label>
+                        <input type="text" class="form-control" id="" placeholder="Address"name="ad">
+                        <span id="text5" style="color: red;font-size:15px;"></span>
+                </div>
+                <div class="delivery-content-left-button row"style="margin-top:50px">
+                        <a href="store.html"style="font-size:20px;color:red"><span>&#171;</span> Back to Store</a>
+                        <button type="submit" class="btn btn-danger" style="text-align: center;margin-left:220px">Complete</button>                       
+                </div>
+                </form>
+            </div>
+            <script>
+                var f = document.getElementById('pay');
+               var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+               function KIEMTRA() {
+                   thanhcong = true;
+                   //kiểm tra, nếu sai thì thanhcong = false
+                   if (f.ten.value.length < 5) {
+                       document.getElementById('text1').innerHTML = 'Fill in full name';
+                       thanhcong = false;
+                   }
+                   if (f.phone.value.length == 0) {
+                       document.getElementById('text2').innerHTML = 'Fill the phone number';
+                       thanhcong = false;
+                   }
+                   if (f.city.value.length == 0) {
+                       document.getElementById('text3').innerHTML = 'Fill the City/Province';
+                       thanhcong = false;
+                   }
+                   if (f.street.value.length == 0) {
+                       document.getElementById('text4').innerHTML = 'Fill the district';
+                       thanhcong = false;
+                   }
+                   if (f.ad.value.length == 0) {
+                       document.getElementById('text5').innerHTML = 'Fill the Address';
+                       thanhcong = false;
+                   }
+       
+                   //dung, thanhcong = true
+                   if (thanhcong == true) {
+                       alert('You have successfully paid');
+                       return true;
+                   }
+                   return false;
+               }
+           </script>
+       
+            <div class="delivery-content-right">
+                <img src="images/sweets-2.jpeg"style="width:50%;margin-left:600px;margin-top:-400px;margin-bottom:70px;border-radius:50%;
+                -moz-border-radius:50%;-webkit-border-radius:50%;">
+            </div>
+          </div>
+      </div>
+
+
+
+    <!--footer-->
+    <div class="container-fluid">
+        <div class="row mt-5 pt-5" style="background-color: rgb(252, 228, 232)">
+            <div class="col-lg-4 text-justify" style="padding-left:85px;line-height:30px">
+                <h5>
+                    ABOUT CAKE
+                </h5>
+                <hr>
+                <p>
+                    Pastry is the name used to refer to cakes made from flour in general, soft and sweet cakes.
+                    Cakes have appeared for the first time since ancient Egypt, over the years of formation and
+                    over the years of formation and over the years of formation and over the years of formation and over
+                    the years of formation and ...
+                </p>
+
+            </div>
+            <div class="col-lg-2" style="padding-left:95px;">
+                <h5>PRODUCTS</h5>
+                <hr>
+                <p class="">
+                    <a href="#" style="color:red">CUPCAKESS</a><br><br>
+                    <a href="#" style="color:red">CAKES</a><br><br>
+                    <a href="#" style="color:red">SWEET</a><br><br>
+                    <a href="#" style="color:red">DOUGHNUTS</a><br><br>
+                </p>
+            </div>
+            <div class="col-lg-2" style="padding-left:100px;">
+                <h5>PAGE</h5>
+                <hr>
+                <p class="">
+                    <a href="#" style="color:red">HOME</a><br><br>
+                    <a href="#" style="color:red">STORE</a><br><br>
+                    <a href="#" style="color:red">CONTACT</a><br><br>
+                </p>
+            </div>
+            <div class="col-lg-3" style="padding-left:100px;">
+                <h5>CONTACT</h5>
+                <hr>
+                <i class="bi bi-house-door-fill fa-1x" style="color:rgb(10, 0, 5)" aria-hidden="true"> 149/18
+                    TrinhdinhtrongTrinhdinhtrong, NY
+                    Phutrung, Tanphu, TPHCM</i><br><br>
+                <i class="bi bi-sticky-fill fa-1x" style="color:rgb(10, 0, 5)" aria-hidden="true">
+                    501200536@itc.edu.vn</i><br><br>
+                <i class="bi bi-phone-fill fa-1x" style="color:rgb(10, 0, 5)" aria-hidden="true"> +84 905
+                    646578906</i><br><br>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="height: 150px; background-color:rgb(245, 216, 221);margin-bottom:-100px">
+        <div class="text-white text-center p-5">
+            <h2 class="my-3">Nganngo@gmail.com.vn</h2>
+        </div>
+    </div>

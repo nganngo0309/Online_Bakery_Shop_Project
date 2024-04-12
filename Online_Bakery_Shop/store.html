@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="store.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>CAKE STORE</title>
+</head>
+
+<body>
+    <!-- menu -->
+    <section id="content">
+        <div class="menu_top">
+            <nav class="navbar navbar-expand-sm  fixed-top "
+                style="height:90px;;margin:0 auto;background-color: rgb(252, 228, 232)">
+                <ul style="font-size:20px;">
+                    <li><a href="home.html" style="color:black">Home</a></li>
+                    <li><a href="store.html"
+                            style="color:black;background-color: pink;height: 90px;width:80px;padding-left:16px;border-radius: 20%;padding-top:30px">Store</a>
+                    </li>
+                    <li><a href="contact.html" style="color:black">Contact</a></li>
+                </ul>
+                <div class="button" style="margin-right: 100px;font-size:20px">
+                    <i class="fa fa-shopping-cart" aria-hidden="true" style="padding-left:300px"></i>
+                    <span>
+                        <b><span class="count">0</span> Items - $ <span class="priceProduct">0</span></b><br>
+                        <a href="complete_order.html" style="margin-left:300px;color:black"><b>Complete order</b></a>
+                    </span>
+                </div>
+                <div class="shoppingCart" style="display: none;">
+                    <h1 class="notification" style="font-size: 2rem; padding: 1rem 0; display: block; text-align: center;">
+                        You not order anything !
+                    </h1>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- lọc sản phẩm -->
+    <section id="filter">
+        <h3 class="our" style="font-size:50px;margin-top:-50px">Our<b style="color:red">Store</b></h3><br>
+        <div id="filter_button" style="margin-left:-740px">
+            <a class="btn active" data-filter="all">All</a>
+            <a class="btn" data-filter="cakes" >Cakes</a>
+            <a class="btn" data-filter="cupcakes" >Cupcakes</a>
+            <a class="btn" data-filter="sweets" >Sweets</a>
+            <a class="btn" data-filter="doughnuts">Doughnuts</a>
+        </div>
+        <!-- tìm kiếm sản phẩm -->
+        <form action="" id="input_filter" style="margin-top:-90px;margin-left:900px">
+            <span>
+                <button type="submit" class="font-weight-bold ml-auto" aria-hidden="true"
+                    style="color: rgb(250, 248, 246);background-color: rgb(194, 12, 12);border-color: rgb(182, 8, 8);border-color: chocolate;width:50px;height:40px;margin-right:-3px">
+                    <i class="fa fa-search" style="color:white;margin-right:2px;"></i> </button>
+            </span>
+            <input type="text" placeholder="Search" id="search-item" autocomplete="off" style="height:40px">
+        </form>
+        <!-- sản phẩm -->
+        <div id="filter-data">
+            <div class="element_cakes" data-item="cupcakes">
+                <img src="images/cc2.jpg" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Cupcake Cheese</h1>
+                    <h1 class="price">5$</h1>
+                </div>
+                <button class="buy fa fa-check" style="font-size: large;"> Order Now</button>
+            </div>
+            <div class="element_cakes" data-item="sweets">
+                <img src="images/sw1.jpg" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Sweet Green Tea</h1>
+                    <h1 class="price">5.99$</h1>
+                </div>
+                <button class="buy fa fa-check" style="font-size: large;"> Order Now</button>
+            </div>
+            <div class="element_cakes" data-item="cupcakes">
+                <img src="images/cc1.jpg" alt=""style="height:340px">
+                <div class="infor">
+                    <h1 class="name_item">Cupcake Chocolate</h1>
+                    <h1 class="price">15.99$</h1>
+                </div>
+                <button class="buy fa fa-check" style="font-size: large;"> Order Now</button>
+            </div>
+
+
+            <div class="element_cakes" data-item="cupcakes">
+                <img src="images/cc3.jpg" alt=""style="height:340px">
+                <div class="infor">
+                    <h1 class="name_item">Cupcake Oreo Super</h1>
+                    <h1 class="price">10.99$</h1>
+                </div>
+                <button class="buy fa fa-check" style="font-size: large;"> Order Now</button>
+            </div>
+            <div class="element_cakes" data-item="sweets">
+                <img src="images/sw3.jpg" alt=""style="height:340px">
+                <div class="infor">
+                    <h1 class="name_item">Sweet Red Yummy</h1>
+                    <h1 class="price">24.99$</h1>
+                </div>
+                <button class="buy fa fa-check" style="font-size: large;"> Order Now</button>
+            </div>
+
+            <div class="element_cakes" data-item="sweets">
+                <img src="images/sw2.jpg" alt=""style="height:340px">
+                <div class="infor">
+                    <h1 class="name_item">Sweet Cocoa Perfect</h1>
+                    <h1 class="price">15$</h1>
+                </div>
+                <button class="buy fa fa-check" style="font-size: large;"> Order Now</button>
+            </div>
+            <div class="element_cakes" data-item="doughnuts">
+                <img src="images/bc.jpg" alt=""style="height:340px">
+                <div class="infor">
+                    <h1 class="name_item">Doughnut Orange</h1>
+                    <h1 class="price">10$</h1>
+                </div>
+                <button class="buy fa fa-check" style="font-size: large;"> Order Now</button>
+            </div>
+
+            <div class="element_cakes" data-item="cakes">
+                <img src="images/ca.jpg" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Cake especially</h1>
+                    <h1 class="price">5$</h1>
+                </div>
+                <button class="buy fa fa-check" style="font-size: large;"> Order Now</button>
+            </div>
+            <div class="element_cakes" data-item="doughnuts">
+                <img src="images/dn2.jpg" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Doughnut Combo</h1>
+                    <h1 class="price">13$</h1>
+                </div>
+                <button class="buy fa fa-check" style="font-size: large;"> Order Now</button>
+            </div>
+            <div class="element_cakes" data-item="cakes">
+                <img src="images/he.jpg" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Cake Wildflowers</h1>
+                    <h1 class="price">15$</h1>
+                </div>
+                <button class="buy fa fa-check" style="font-size: large;"> Order Now</button>
+            </div>
+            <div class="element_cakes" data-item="cakes">
+                <img src="images/banh-kem-tuoi-10.jpg" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Cake Butterfly Pea Flower</h1>
+                    <h1 class="price">12$</h1>
+                </div>
+                <button class="buy fa fa-check" style="font-size: large;"> Order Now</button>
+            </div>
+            <div class="element_cakes" data-item="doughnuts">
+                <img src="images/donut-socola.jpg" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Doughnut Chocolate</h1>
+                    <h1 class="price">25$</h1>
+                </div>
+                <button class="buy fa fa-check" style="font-size: large;"> Order Now</button>
+            </div>
+            <h1 id="showtext"></h1>
+        </div>
+    </section>
+    <!-- giỏ hàng -->
+    <section id="modal">
+        <div class="modal_box show">
+            <div class="fa fa-window-close"></div>
+            <div class="lightbox"></div>
+            
+            <div class="fa fa-caret-left"></div>
+            <div class="fa fa-caret-right"></div>
+        </div>
+    </section>
+    <script src="javascript.js"></script>
+    <!-- footer -->
+    <div class="container-fluid">
+        <div class="row mt-5 pt-5" style="background-color: rgb(252, 228, 232)">
+            <div class="col-lg-4 text-justify" style="padding-left:85px;line-height:30px">
+                <h5>
+                    ABOUT CAKE
+                </h5>
+                <hr>
+                <p>
+                    Pastry is the name used to refer to cakes made from flour in general, soft and sweet cakes.
+                    Cakes have appeared for the first time since ancient Egypt, over the years of formation and
+                    over the years of formation and over the years of formation and over the years of formation and over
+                    the years of formation and ...
+                </p>
+
+            </div>
+            <div class="col-lg-2" style="padding-left:95px;">
+                <h5>PRODUCTS</h5>
+                <hr>
+                <p class="">
+                    <a href="#" style="color:red">CUPCAKESS</a><br><br>
+                    <a href="#" style="color:red">CAKES</a><br><br>
+                    <a href="#" style="color:red">SWEET</a><br><br>
+                    <a href="#" style="color:red">DOUGHNUTS</a><br><br>
+                </p>
+            </div>
+            <div class="col-lg-2" style="padding-left:100px;">
+                <h5>PAGE</h5>
+                <hr>
+                <p class="">
+                    <a href="#" style="color:red">HOME</a><br><br>
+                    <a href="#" style="color:red">STORE</a><br><br>
+                    <a href="#" style="color:red">CONTACT</a><br><br>
+                </p>
+            </div>
+            <div class="col-lg-3" style="padding-left:100px;">
+                <h5>CONTACT</h5>
+                <hr>
+                <i class="bi bi-house-door-fill fa-1x" style="color:rgb(10, 0, 5)" aria-hidden="true"> 149/18
+                    TrinhdinhtrongTrinhdinhtrong, NY
+                    Phutrung, Tanphu, TPHCM</i><br><br>
+                <i class="bi bi-sticky-fill fa-1x" style="color:rgb(10, 0, 5)" aria-hidden="true">
+                    501200536@itc.edu.vn</i><br><br>
+                <i class="bi bi-phone-fill fa-1x" style="color:rgb(10, 0, 5)" aria-hidden="true"> +84 905
+                    646578906</i><br><br>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="height: 150px; background-color:rgb(245, 216, 221)">
+        <div class="text-white text-center p-5">
+            <h2 class="my-3">Nganngo@gmail.com.vn</h2>
+        </div>
+    </div>
+</body>
+
+</html>

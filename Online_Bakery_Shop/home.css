@@ -1,0 +1,142 @@
+*{margin: 0;padding: 0;box-sizing: border-box!important;}
+
+.menu_top {
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    background-color: #ffffff;
+    position: relative;
+    color:black;
+}
+
+
+.menu_top ul li a:link{
+    text-decoration: none;
+   
+}
+.menu_top ul li
+{
+  list-style-type: none;
+  display: inline;
+  margin-left: 50px;
+  
+}
+
+
+.contact,.button,.menu_top ul{
+    flex: 1;
+    justify-content: center;
+}
+.button {
+    cursor: pointer;
+    padding: 0.8rem 0;
+}
+#middle {
+    margin-top: 6rem!important;
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.left {
+    padding-right: 5rem;
+}
+.right {
+    height: 400px;
+}
+.right img {
+    max-width: 100%;
+    height: auto;
+
+}
+.square {
+    position: relative;
+}
+.square::before {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    outline: 0.5rem solid rgb(233, 7, 7);
+    transition: 1s;
+}
+h3.us {
+    font-size: 2.5rem;
+}
+h3.us b,h3.name b {
+    color: red;
+}
+.btn {
+    margin-top: 2rem;
+    background: red;
+    border: 1px solid red;
+    color:white;
+    font-weight: 100;
+}
+.shoppingCart {
+    overflow-y: scroll;
+    z-index: 90;
+    position: absolute;
+    width: 18rem;
+    top: 100%;
+    height: 200px;
+    right: 0;
+    /* backgrounrgb(197, 197, 186)low; */
+    background: #d4d44f;
+}
+p{
+    margin-bottom: 0!important;
+}
+.shoppingCart img {
+    width: 50px;
+    height: 50px;
+    flex: 1;
+    border-radius: 50%;
+}
+.shoppingCart {
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background: url(https://image.freepik.com/free-vector/abstract-colorful-flow-shapes-background_23-2148258092.jpg);
+}
+.cart_item {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 10px;
+    border: 2px solid white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background: #00caba;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.cart_item:hover {
+    background: lightsalmon;
+}
+
+
+.cart_item img {
+    width: 50px;
+    height: 50px;
+}
+.button {
+    background-color: lightgrey;
+}
+.button:hover {
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+.menu_top ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+}
+.menu_top ul li {
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+}
+
